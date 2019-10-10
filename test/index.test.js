@@ -24,5 +24,5 @@ test('it returns the correct value', () => {
     const tip = 10;
 
     const result = calculateBill(price, vat, tip);
-    expect(result).toBe('£130');
+    expect('£' + result).toBe('£130');
 });
