@@ -13,8 +13,8 @@ test('it is a function', () => {
     expect(calculateBill).toBeDefined();
 });
 
-test('it returns a string', () => {
-    const calculateBill = () => {};
+test('it returns a string ', () => {
+    const result = calculateBill();
     expect(typeof result).toBe('string');
 });
 
@@ -23,6 +23,5 @@ test('it returns the correct value', () => {
     const vat = 20;
     const tip = 10;
 
-    const result = calculateBill(price, vat, tip);
-    expect('£' + result).toBe('£130');
+    expect(calculateBill(price, vat, tip)).toBe('£130')
 });
